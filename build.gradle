@@ -1,0 +1,32 @@
+group 'com.varunmannuru'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'net.serenity-bdd.aggregator'
+
+sourceCompatibility = 1.8
+
+dependencies {
+    testCompile 'net.serenity-bdd:serenity-core:1.2.2'
+    testCompile 'net.serenity-bdd:serenity-junit:1.2.2'
+    testCompile ('io.github.bonigarcia:webdrivermanager:1.6.0'){
+        exclude group: 'org.seleniumhq.selenium'
+    }
+
+    testCompile('junit:junit:4.12')
+    testCompile('org.assertj:assertj-core:3.6.2')
+    testCompile('org.slf4j:slf4j-simple:1.7.23')
+}
+
+repositories {
+    jcenter()
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'net.serenity-bdd:serenity-gradle-plugin:1.2.2'
+    }
+}
