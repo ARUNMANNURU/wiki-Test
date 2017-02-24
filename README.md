@@ -12,10 +12,10 @@ a) Download the project zip folder
 
 b) Using console set path to project folder were you download the file ( ex: c:Downloads/wiki-Test )
 
-c) Using the gradle wrapper is as simple as typing.Following commands
+c) Using the gradle wrapper is as simple as typing.You can run the application by entering the follwing command.
 
 ``` sh ./gradlew clean test aggregate
-```
+
       (or)
       
 ``` ./gradlew clean test aggregate
