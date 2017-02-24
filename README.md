@@ -12,9 +12,17 @@ a) Download the project zip folder
 
 b) Using console set path to project folder were you download the file
 
-c) Using the gradle wrapper is as simple as typing.
+c) Using the gradle wrapper is as simple as typing.Following commands
 
-```sh ./gradlew clean test aggregate
+``` sh ./gradlew clean test aggregate
 ```
+      (or)
+      
+``` ./gradlew clean test aggregate
 
-### Results are stored in target folder /target/site/serenity/index.html
+      (or)
+      
+```` gradlew clean test aggregate
+
+
+#### Results are stored in target folder /target/site/serenity/index.html
